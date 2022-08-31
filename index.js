@@ -6,18 +6,6 @@ const app = express()
 
 
 
-const db = process.env.DATABASE.replace(
-    '<PASSWORD>',
-    process.env.DATABASE_PASSWORD
-);
-mongoose.connect(
-    db,
-    () => {
-        console.log('Connected');
-    },
-    (err) => console.log(err.message)
-);
-
 app.get("/", (req, res )=>{
     res.send("radi sve")
 })
