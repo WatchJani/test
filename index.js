@@ -1,6 +1,5 @@
 const express = require("express")
 require('dotenv').config({ path: './local.env' });
-const mongoose = require("mongoose")
 
 const app = express()
 
